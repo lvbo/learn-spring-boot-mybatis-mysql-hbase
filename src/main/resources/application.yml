@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    druid:
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 2000
+      mysql:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initial-size: 3
+        max-active: 10
+        max-wait: 60000
+        min-idle: 3
+        username: root
+        password: mysql
+        url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+      stat-view-servlet:
+        login-password: admin
+        login-username: admin
+      hbase:
+        driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+        initial-size: 6
+        max-active: 20
+        max-wait: 120000
+        min-idle: 6
+        username:
+        password:
+        url: jdbc:phoenix:127.0.0.1:2181
+
+mybatis:
+  config-location: classpath:mappers/mybatis-config.xml
+  type-aliases-package: io.github.lvbo.learn.spring.boot.mmh.model
