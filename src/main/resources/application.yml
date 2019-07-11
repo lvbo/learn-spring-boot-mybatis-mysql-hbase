@@ -25,7 +25,7 @@ spring:
         min-idle: 6
         username:
         password:
-        url: jdbc:phoenix:127.0.0.1:2181
+        url: jdbc:phoenix:host76:61004
 
 mybatis:
   config-location: classpath:mappers/mybatis-config.xml
