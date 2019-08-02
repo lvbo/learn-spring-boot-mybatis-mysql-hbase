@@ -26,9 +26,9 @@ spring:
         username:
         password:
         url: jdbc:phoenix:host76:61004
-  flyway:
-    cleanDiabled: true
-    enabled: true
+#  flyway:
+#    cleanDiabled: true
+#    enabled: true
 
 mybatis:
   config-location: classpath:mappers/mybatis-config.xml

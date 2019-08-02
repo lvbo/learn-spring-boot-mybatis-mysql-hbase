@@ -25,6 +25,19 @@ CREATE TABLE `users` (
   `pass_word` varchar(32) DEFAULT NULL COMMENT '密码',
   `user_sex` varchar(32) DEFAULT NULL,
   `nick_name` varchar(32) DEFAULT NULL,
+  `age` int,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+
+
+
+// HBase Phoenix
+CREATE TABLE users (
+  id bigint not null primary key,
+  user_name varchar(32),
+  pass_word varchar(32),
+  user_sex varchar(32),
+  nick_name varchar(32),
+  age integer
+);
 

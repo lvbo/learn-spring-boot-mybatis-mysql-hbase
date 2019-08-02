@@ -4,6 +4,7 @@ import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.configuration.FluentConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 import javax.sql.DataSource;
@@ -13,7 +14,7 @@ import javax.sql.DataSource;
  * @version V1.0
  * @date 2019-07-17 10:43
  */
-//@Configuration
+@Configuration
 public class FlywayConfig {
 
     @Autowired
